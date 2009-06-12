@@ -1,0 +1,76 @@
+/* obeattie.com stylesheet
+   @author obeattie */
+
+@import url('./reset.css');
+
+/* Base */
+body {
+    background: #fff;
+    color: #121621;
+    line-height: 1.7;
+    padding-top: 65px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    font-size: 13px;
+}
+
+em { font-style: italic; }
+strong { font-weight: bold; }
+p, ul, ol { margin: 0 0 20px 0; }
+
+ul {
+    list-style: disc inside;
+    padding-left: 15px;
+}
+
+ol {
+    list-style: decimal inside;
+    padding-left: 15px;
+}
+
+/* Style */
+h1 a {
+    display: block;
+    background: #121621 url('../img/name.png') 50px center no-repeat;
+    height: 93px;
+    width: 700px;
+    padding-left: 50px;
+    margin-bottom: ;
+    text-indent: -999999px;
+}
+
+#content {
+    margin: 0 0 30px 50px;
+    width: 560px;
+}
+    
+    p.lead {
+        display: block;
+        text-indent: -999999px;
+        width: 520px;
+        height: 28px;
+        margin: 30px 0;
+        background: url('../img/leader.png') center left no-repeat;
+    }
+    
+    /* Headings */
+    h3 { font-size: 16px; }
+        h3 span, h3 em { font-size: 13px; margin-left: 20px; }
+    
+    h2 {
+        display: block;
+        height: 17px;
+        background-position: center left;
+        background-repeat: no-repeat;
+        margin: 60px 0 20px 0;
+        text-indent: -999999px;
+    }
+    
+        h2#employment {
+            width: 174px;
+            background-image: url('../img/employment-heading.png');
+        }
+        
+        h2#skills {
+            width: 82px;
+            background-image: url('../img/skills-heading.png');
+        }
