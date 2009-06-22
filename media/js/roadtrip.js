@@ -35,7 +35,7 @@ function twitterContentAvailable(data){
         // Don't display @replies
         if (tweet.text[0] != '@') {
             var result = [
-                '<h3>' + tweet.text + '</h3>',
+                '<h3>' + linkifyTweet(tweet.text) + '</h3>',
                 '<p><a href="http://twitter.com/obeattie/status/' + tweet.id + '/">' + timesince(tweet.created_at) + '</a></p>'
             ];
             html.push(result.join(''));
@@ -47,6 +47,10 @@ function twitterContentAvailable(data){
     }
     
     document.getElementById('tweets').innerHTML = html.join('');
+};
+
+function linkifyTweet(tweet) {
+   return tweet.replace(/(^|\s)@(\w+)/g, '$1@<a href="http://www.twitter.com/$2/">$2</a>');
 };
 
 function timesince(time_value){
