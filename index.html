@@ -12,7 +12,9 @@
     <h1><a href="http://obeattie.com/">Oliver Beattie</a></h1>
     
     <div id="content">
-        <p class="lead">I am a web developer in the United Kingdom.</p>
+        <p id="lead">I am a web developer in the United Kingdom.</p>
+        <p id="contact-lead"><a class="email" href="mailto:oliver@obeattie.com">oliver@obeattie.com</a> <span class="tel">Telephone: 07515 357718</span></p>
+        <div class="clear section"></div>
         
         <!-- Profile -->
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor sagittis nisi, at dapibus elit sollicitudin id. Curabitur non enim ligula. Proin egestas vestibulum dignissim. Fusce sit amet eros nec mi ornare vulputate non eget libero. Nunc ac diam eget erat volutpat laoreet non ut massa. Etiam dapibus consequat lorem, sed sagittis lorem eleifend et. Quisque quis feugiat diam. Phasellus mattis felis vel leo sollicitudin porttitor. Mauris nisl lorem, vestibulum et hendrerit hendrerit, sodales vitae nisl. Proin et arcu purus. Aenean consectetur feugiat nulla.</p>
@@ -20,33 +22,50 @@
         <!-- Employment -->
         <h2 id="employment">Employment</h2>
             <!-- BLT -->
-            <h3>Blue Lava Technologies, Honolulu, HI <span>Web Developer</span> <em>January 2008&ndash;</em></h3>
+            <h3>Blue Lava Technologies, Honolulu, HI <span>Web Developer</span> <em>January 2008&ndash;June 2009</em></h3>
+            <p>Blue Lava Technologies is an internet start-up based in Honolulu, Hawaii, building <a href="http://ilovephotos.com/">iLovePhotos</a>, a Django-based photo sharing platform that integrates facial detection and granular, private sharing. At Blue Lava, I was part of a  three-person team, responsible for the design and implementation of the web platform. Notable achievements include:</p>
             <ul>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
-                <li>Lorem ipsum</li>
+                <li>Implemented a site-wide message queue system for background tasks with RabbitMQ</li>
+                <li>Designed and built the site's &quot;Channels&quot; feature, which enables photos matching specified criteria to be automatically broadcast to digital photo frames, iPods &amp; iPhones, and Apple TV devices as soon as they are uploaded or shared with a user</li>
+                <li>Built the site's &quot;Mission Control&quot; functionality, including detailed user statistics</li>
+                <li>Designed many of the models, including a private, granular sharing system and an efficient News Feed, currently operating across thousands of user accounts</li>
+                <li>Worked with many site components that rely heavily on Amazon Web Services (S3 and EC2)</li>
+                <li>Built a database migrations and deployment toolkit, which is used to automatically and reliably deploy new versions of the site across many servers with no downtime</li>
+                <li>Co-designed and implemented the iLovePhotos visual identity</li>
+                <li>Rapidly iterated on site features, using the Scrum agile development method</li>
             </ul>
             
             <!-- SR -->
-            <h3>SchoolRack.com, Los Angeles, CA <span>Web Developer</span> <em>February 2008&ndash;November 2008</em></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor sagittis nisi, at dapibus elit sollicitudin id. Curabitur non enim ligula. Proin egestas vestibulum dignissim. Fusce sit amet eros nec mi ornare vulputate non eget libero. Nunc ac diam eget erat volutpat laoreet non ut massa. Etiam dapibus consequat lorem, sed sagittis lorem eleifend et. Quisque quis feugiat diam. Phasellus mattis felis vel leo sollicitudin porttitor. Mauris nisl lorem, vestibulum et hendrerit hendrerit, sodales vitae nisl. Proin et arcu purus. Aenean consectetur feugiat nulla.</p>
-            
-            <!-- Misc -->
-            <h3>Welbeck Tiles, Penzance, Cornwall <em>March 2007&ndash;January 2008</em></h3>
+            <h3>SchoolRack, Los Angeles, CA <span>Web Developer</span> <em>February 2008&ndash;November 2008</em></h3>
+            <p>I worked as a contractor for <a href="http://www.schoolrack.com/">SchoolRack</a>, a Django-based site for teachers, students and parents to communicate outside the classroom. I designed and implemented the billing, premium subscription, user messaging, email notification and discussion board components. These are currently in use on tens of thousands of accounts.</p>
         
         <!-- Skills -->
         <h2 id="skills">Skills</h2>
             <ul class="col">
-                <li>One</li>
+                <li>Django, Python</li>
+                <li>SQL, SQLALchemy (and Django integration)</li>
+                <li>AMQP, RabbitMQ</li>
+                <li>XMPP, Jabber</li>
+                <li>Memcached, Squid</li>
+                <li>Amazon Web Services (S3, EC2, SQS)</li>
+                <li>Git, Subversion, Mercurial, Bazaar</li>
+                <li>Unit, functional and regression testing</li>
+                <li>OpenID, Facebook Connect</li>
             </ul>
             <ul class="col">
-                <li>Tw</li>
+                <li>Web services integration</li>
+                <li>API design and development, OAuth</li>
+                <li>JavaScript, (X)HTML, XML, CSS, AJAX</li>
+                <li>Linux administration (Ubuntu/Debian), Shell</li>
+                <li>Apache, nginx, FastCGI</li>
+                <li>MySQL, PostgreSQL, PostGIS</li>
+                <li>Agile development practices (Scrum)</li>
+                <li>Adobe Photoshop, Illustrator, InDesign</li>
             </ul>
+            <div class="clear"></div>
         
-        <!-- 
+        <!-- Contact -->
+        <h2 id="contact">Contact details</h2>
     </div>
 </body>
 </html>
