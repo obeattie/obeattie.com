@@ -35,7 +35,7 @@ function twitterContentAvailable(data){
         // Don't display @replies
         if (tweet.text[0] != '@') {
             var result = [
-                '<h3>' + linkifyTweet(tweet.text) + '</h3>',
+                '<h3>' + linkifyTweet(linkify(tweet.text)) + '</h3>',
                 '<p><a href="http://twitter.com/obeattie/status/' + tweet.id + '/">' + timesince(tweet.created_at) + '</a></p>'
             ];
             html.push(result.join(''));
@@ -76,4 +76,10 @@ function timesince(time_value){
     } else {
         return (parseInt(delta / 86400)).toString() + ' days ago';
     }
+};
+
+function linkify(text){
+    return text.replace(/((https?|s?ftp|ssh)\:\/\/[^"\s\<\>]*[^.,;'">\:\s\<\>\)\]\!])/g, function(url){
+        return '<a href="' + url + '">' + url + '</a>';
+    });
 };
