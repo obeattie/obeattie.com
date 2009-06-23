@@ -77,6 +77,11 @@ h1 a {
                 width: 174px;
             }
             
+            p#contact-lead a.twitter {
+                background: url('../img/twitter-leader.png') center left no-repeat;
+                width: 114px;
+            }
+            
             p#contact-lead span.tel {
                 background: url('../img/tel-leader.png') center left no-repeat;
                 width: 154px;
