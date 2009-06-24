@@ -141,3 +141,10 @@ ul#flickr {
         ul#flickr li img {
             width: 125px;
         }
+
+/* Map */
+div#brightkite {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+}
