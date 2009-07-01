@@ -12,13 +12,13 @@ function brightkiteContentAvailable(data) {
     var points = [];
     var linePoints = []
     var start = Date.parse('Mon, 22 Jun 2009 13:00:00 GMT-1000')
-    console.log(start);
+    var end = Date.parse('Tue, 30 Jun 2009 22:00:00 GMT-0700')
     
     for (i in data) {
         waypoint = data[i];
         // Only care about points created after the start of the trip
         var pointDate = Date.parse(waypoint.created_at);
-        if (pointDate > start) {
+        if ((pointDate > start) && (pointDate < end)) {
             points.push([pointDate, new GLatLng(waypoint.place.latitude, waypoint.place.longitude)]);
         }
     }
