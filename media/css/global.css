@@ -36,6 +36,15 @@ ol {
 .section { padding-bottom: 50px; }
 
 /* Style */
+a#pdf {
+    display: block;
+    background: url('../img/pdf-download.png') left center no-repeat;
+    height: 14px;
+    width: 107px;
+    text-indent: -999999px;
+    margin: -18px 0 10px 38px;
+}
+
 h1 a {
     display: block;
     background: #121621 url('../img/name.png') left center no-repeat;
