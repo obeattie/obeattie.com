@@ -6,16 +6,14 @@
 <head>
     <title>Oliver Beattie</title>
     <link rel="stylesheet" href="../media/css/global.css" media="screen,projection" />
-    <link rel="openid.server" href="http://www.myopenid.com/server" />
-    <link rel="openid.delegate" href="http://obeattie.myopenid.com/" />
     <link rel="alternate" href="http://twitter.com/statuses/user_timeline/13697.rss" title="obeattie's Updates" type="application/rss+xml" />
     
-    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAAbnrWR10H4pf-R2UGPg_oJRTa4IfpSccEQ3P0ZzOSrXwBcqTBxxQZixkP0mlJj1uy1UpzV_dJaQ2hiA" type="text/javascript"></script>
+    <link rel="openid.server" href="http://www.myopenid.com/server" />
+    <link rel="openid.delegate" href="http://obeattie.myopenid.com/" />
     
     <script type="text/javascript" src="../media/js/global.js"></script>
     <script type="text/javascript" src="../media/js/twitter.js"></script>
     <script type="text/javascript" src="../media/js/flickr.js"></script>
-    <script type="text/javascript" src="../media/js/brightkite.js"></script>
     
     <script type="text/javascript" src="http://stats.obeattie.com/?js"></script>
 </head>
@@ -24,13 +22,8 @@
     <h1><a href="http://obeattie.com/">Oliver Beattie</a></h1>
     
     <div id="content">
-        <p id="lead">I'm on a road trip mothafuckers.</p>
         <p id="contact-lead"><a class="email" href="mailto:oliver@obeattie.com">oliver@obeattie.com</a> <a class="twitter" href="http://twitter.com/obeattie/">Twitter: @obeattie</a></p>
         <div class="clear section"></div>
-        
-        <div id="brightkite">
-            <!-- Map goes here -->
-        </div>
         
         <ul id="flickr">
             <!-- Flickr photos go here -->
@@ -40,11 +33,8 @@
             <!-- Tweets go here -->
         </div>
     </div>
-    
-    <!-- Javascripty goodness -->
     <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/obeattie.json?callback=twitterContentAvailable&amp;count=30"></script>
-    <script type="text/javascript" src="http://api.flickr.com/services/rest/?api_key=6d63445dcee27bcb0adaf446e51c715f&amp;method=flickr.photos.search&amp;user_id=46295100@N00&amp;format=json&amp;jsoncallback=flickrContentAvailable&amp;per_page=4&amp;min_taken_date=2009-06-23%2003%3A54%3A19&amp;max_taken_date=2009-07-01%2023%3A57%3A10&amp;media=photos&amp;extras=url_s"></script>
-    <script type="text/javascript" src="http://jsonpgateway.appspot.com/?url=http%3A%2F%2Fbrightkite.com%2Fpeople%2Fobeattie%2Fobjects.json%3Ffilters%3Dcheckins%26limit%3D100&amp;callback=brightkiteContentAvailable"></script>
+    <script type="text/javascript" src="http://api.flickr.com/services/feeds/photos_public.gne?format=json&amp;id=46295100@N00&amp;jsoncallback=flickrContentAvailable"></script>
     
     <!-- Google analytics -->
     <script type="text/javascript">

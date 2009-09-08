@@ -6,34 +6,91 @@
 <head>
     <title>Oliver Beattie</title>
     <link rel="stylesheet" href="./media/css/global.css" media="screen,projection" />
-    <link rel="alternate" href="http://twitter.com/statuses/user_timeline/13697.rss" title="obeattie's Updates" type="application/rss+xml" />
-    
     <link rel="openid.server" href="http://www.myopenid.com/server" />
     <link rel="openid.delegate" href="http://obeattie.myopenid.com/" />
-    
-    <script type="text/javascript" src="./media/js/global.js"></script>
-    <script type="text/javascript" src="./media/js/twitter.js"></script>
-    <script type="text/javascript" src="./media/js/flickr.js"></script>
     
     <script type="text/javascript" src="http://stats.obeattie.com/?js"></script>
 </head>
 
-<body>
+<body id="resume">
+    <a id="pdf" href="./media/cv.pdf">Download PDF &rarr;</a>
     <h1><a href="http://obeattie.com/">Oliver Beattie</a></h1>
     
     <div id="content">
-        <p id="contact-lead"><a class="email" href="mailto:oliver@obeattie.com">oliver@obeattie.com</a> <a class="twitter" href="http://twitter.com/obeattie/">Twitter: @obeattie</a></p>
+        <p id="lead">I am a web developer in the United Kingdom.</p>
+        <p id="contact-lead"><a class="email" href="mailto:oliver@obeattie.com">oliver@obeattie.com</a> <span class="tel">Telephone: +44 (0)7515 357718</span></p>
         <div class="clear section"></div>
         
-        <ul id="flickr">
-            <!-- Flickr photos go here -->
-        </ul>
+        <!-- Profile -->
+        <p>An eager web developer in London with extensive experience of Python and web technologies, looking for a fast-paced, challenging work; contracting or permanent.</p>
         
-        <div id="tweets">
-            <!-- Tweets go here -->
-        </div>
+        <!-- Employment -->
+        <h2 id="employment">Employment</h2>
+            <!-- BLT -->
+            <h3>Blue Lava Technologies, Honolulu, HI <span>Web Developer</span> <em>January 2008&ndash;June 2009</em></h3>
+            <p>Blue Lava Technologies is an internet start-up based in Honolulu, Hawaii, building <a href="http://ilovephotos.com/">iLovePhotos</a>, a Python/Django-based photo sharing platform that integrates facial detection and granular, private sharing. At Blue Lava, I was part of a  three-person team, responsible for the design and implementation of the web platform. Notable achievements included:</p>
+            <ul>
+                <li>Implementing a site-wide message queue system for background tasks with RabbitMQ</li>
+                <li>Designing and building the site's &quot;Channels&quot; feature, which  automatically broadcasts photos matching specified criteria to digital photo frames, iPods &amp; iPhones, and Apple TV devices</li>
+                <li>Building the site's &quot;Mission Control&quot; functionality, including detailed user statistics</li>
+                <li>Designing many of the models, including a private, granular sharing system and an efficient news feed currently operating across thousands of user accounts</li>
+                <li>Working with many site components that rely heavily on Amazon Web Services (S3 and EC2)</li>
+                <li>Building a database migration and deployment toolkit, which is used to automatically and reliably deploy new versions of the site across many servers with no downtime</li>
+                <li>Co-designing and implementing the iLovePhotos visual identity</li>
+                <li>Rapidly iterating on site features, using Scrum</li>
+            </ul>
+            
+            <!-- SR -->
+            <h3>SchoolRack, Los Angeles, CA <span>Web Developer</span> <em>February 2008&ndash;November 2008</em></h3>
+            <p>I worked as a contractor for <a href="http://www.schoolrack.com/">SchoolRack</a>, a site for teachers, students and parents to communicate outside the classroom. I designed and implemented the billing, premium subscription, user messaging, email notification and discussion board components. These are currently in use on tens of thousands of accounts.</p>
+            
+            <!-- WT -->
+            <h3>Welbeck Tiles Ltd. <span>Designer / Developer</span> <em>Summer 2009</em></h3>
+            <p>I worked with <a href="http://www.welbeck.com/">Welbeck Tiles</a>, Britain's leading handmade tile company to completely redesign and rebuild their website and identity. The new identity is now used across both the website (built with Python/Django and launched August 2009) and all printed materials.</a></p>
+        
+        <!-- Skills -->
+        <h2 id="skills">Skills</h2>
+            <ul class="col">
+                <li>Django, Python</li>
+                <li>SQL, SQLALchemy (and Django integration)</li>
+                <li>AMQP, RabbitMQ</li>
+                <li>XMPP, Jabber</li>
+                <li>Memcached, Squid</li>
+                <li>PHP</li>
+                <li>Amazon Web Services (S3, EC2, SQS)</li>
+                <li>Git, Subversion, Mercurial, Bazaar</li>
+                <li>OpenID, Facebook Connect</li>
+            </ul>
+            <ul class="col">
+                <li>Web services integration</li>
+                <li>API design and development, OAuth</li>
+                <li>JavaScript, (X)HTML, XML, CSS, AJAX</li>
+                <li>Linux administration (Ubuntu/Debian), Shell</li>
+                <li>Apache, nginx, FastCGI</li>
+                <li>MySQL, PostgreSQL, PostGIS</li>
+                <li>Agile development practices (Scrum)</li>
+                <li>Adobe Photoshop, Illustrator, InDesign</li>
+                <li>Unit, functional and regression testing</li>
+            </ul>
+            <div class="clear"></div>
+        
+        <!-- Contact -->
+        <h2 id="contact">Contact details</h2>
+        <p>I can be reached <a href="mailto:oliver@obeattie.com">by email to oliver@obeattie.com</a>, or by telephone on +44 (0)7515 357718.</p>
     </div>
-    <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/obeattie.json?callback=twitterContentAvailable&amp;count=30"></script>
-    <script type="text/javascript" src="http://api.flickr.com/services/feeds/photos_public.gne?format=json&amp;id=46295100@N00&amp;jsoncallback=flickrContentAvailable"></script>
+    
+    <!-- Google analytics -->
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-915572-1");
+            pageTracker._trackPageview();
+        } catch(err) {
+            // Ho hum
+        }
+    </script>
 </body>
 </html>
