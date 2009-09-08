@@ -5,15 +5,15 @@ function flickrContentAvailable(data){
     var html = [];
     var itercounter = 0;
     
-    for (var i in data.items) {
-        var photo = data.items[i];
+    for (var i in data.photos.photo) {
+        var photo = data.photos.photo[i];
         var cls = '';
         
         if (itercounter == 3) cls = ' class="last"';
         
         var result = [
             '<li' + cls + '>',
-                '<a href="' + photo.link + '"><img src="' + photo.media.m + '" alt="' + photo.title + '" /></a>',
+                '<a href="' + photo.link + '"><img src="' + photo.url_s + '" alt="' + photo.title + '" /></a>',
             '</li>'
         ]
         html.push(result.join(''));
