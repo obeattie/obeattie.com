@@ -1,9 +1,8 @@
 """Fabric deployment file for obeattie.com"""
+from fabric.api import env, run
 
 # The server uses ssh keys, so no passwords here.
-config.fab_hosts = ['obeattie.com', ]
-config.fab_user = 'fabric'
-config.fab_port = 30000
+env.hosts = ['fabric@obeattie.com:30000', ]
 
 def deploy():
     """Deploys the newest version of the site (this just consists of running `git pull`)"""
