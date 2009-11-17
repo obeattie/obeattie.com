@@ -73,9 +73,12 @@ h1 a {
             background: url('../img/leader.png') center left no-repeat;
         }
         
+        #resume p.lead {
+            font-size: 1.2em;
+        }
+        
     #resume strong#unavailable {
         display: block;
-        margin-top: -25px;
         padding-bottom: 25px;
         text-indent: -99999em;
         width: 330px;
@@ -178,4 +181,10 @@ div#brightkite {
     width: 100%;
     height: 300px;
     margin-bottom: 50px;
+}
+
+/* Feature area */
+div.feature {
+    background: #ebebeb;
+    padding: 10px;
 }
