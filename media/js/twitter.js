@@ -15,9 +15,6 @@ function twitterContentAvailable(data){
             ];
             html.push(result.join(''));
             hits++;
-            if (hits == 20){
-                break;
-            }
         }
     }
     
