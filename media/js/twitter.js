@@ -5,13 +5,23 @@ function twitterContentAvailable(data){
     var html = [];
     var hits = 0;
     
+    var sorter = function(x, y){
+        return (y.id - x.id);
+    }
+    data.sort(sorter);
+    
     for (var i in data) {
         var tweet = data[i];
         // Don't display @replies
         if (tweet.text[0] != '@') {
             var result = [
-                '<h3>' + linkifyTweet(linkify(tweet.text)) + '</h3>',
-                '<p><a href="http://twitter.com/obeattie/status/' + tweet.id + '/">' + timesince(tweet.created_at) + '</a></p>'
+                '<div class="' + (tweet.user.screen_name == 'hawaiikaos2' ? 'tweet-kaos': 'tweet') + '">',
+                    '<h3>' + linkifyTweet(linkify(tweet.text)) + '</h3>',
+                    '<p>',
+                        '<a href="http://twitter.com/' + tweet.user.screen_name + '/status/' + tweet.id + '/">' + timesince(tweet.created_at) + '</a>',
+                        (tweet.user.screen_name == 'hawaiikaos2' ? linkifyTweet('<span>by @hawaiikaos2</span>') : ''),
+                    '</p>',
+                '</div>'
             ];
             html.push(result.join(''));
             hits++;

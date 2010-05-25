@@ -129,6 +129,22 @@ h1 a {
         padding-bottom: 10px;
     }
     
+        div#tweets p span {
+            margin-left: 25px;
+        }
+    
+    div#tweets div.tweet-kaos {
+        opacity: 0.6;
+    }
+    
+        div#tweets div.tweet-kaos h3 {
+            font-size: 1em;
+        }
+        
+        div#tweets div.tweet-kaos p {
+            font-size: 12px;
+        }
+    
     /* Headings */
     h3 { font-size: 16px; }
         h3 span, h3 em { font-size: 13px; margin-left: 20px; }
