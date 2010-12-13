@@ -13,7 +13,7 @@ function flickrContentAvailable(data){
         
         var result = [
             '<li' + cls + '>',
-                '<a href="' + photo.link + '"><img src="' + photo.url_s + '" alt="' + photo.title + '" /></a>',
+                '<a href="http://www.flickr.com/photo.gne?id=' + photo.id + '"><img src="' + photo.url_s + '" alt="' + photo.title + '" /></a>',
             '</li>'
         ]
         html.push(result.join(''));
