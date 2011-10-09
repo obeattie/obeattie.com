@@ -1,0 +1,62 @@
+/* -----
+   obeattie.com splash stylesheet
+   ----- */
+
+html, body, div, h1, a {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background: #1d2027 url('./bg.png') center center no-repeat;
+    font: 18px/1.4 normal 'Proxima Nova', 'Futura', 'Gill Sans', sans-serif;
+}
+    
+    /* Card */
+    #card {
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 1);
+        -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 1);
+        background: #fff;
+        width: 500px;
+        height: 250px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -125px 0 0 -250px;
+        color: #909194;
+        display: table;
+    }
+    
+        #card div {
+            display: table-cell;
+            vertical-align: middle;
+            position: relative;
+            top: 7px;
+        }
+        
+        #card h1 {
+            display: block;
+            text-indent: -99999em;
+            width: 381px;
+            height: 61px;
+            background: url('./logo.png') 0 0 no-repeat;
+            margin: 0 auto;
+        }
+        
+        #card p {
+            text-align: center;
+        }
+        
+        #card a {
+            color: #1d2027;
+            text-decoration: none;
+        }

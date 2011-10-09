@@ -1,106 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Oliver Beattie</title>
-    <link rel="stylesheet" href="./media/css/global.css" media="screen,projection" />
+    <meta charset="utf-8" />
+    <title>Oliver Beattie will occasionally blog here&hellip;</title>
+    
+    <link rel="stylesheet" type="text/css" href="media/style.css" />
     <link rel="openid.server" href="http://www.myopenid.com/server" />
     <link rel="openid.delegate" href="http://obeattie.myopenid.com/" />
+    
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-915572']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
 </head>
 
-<body id="resume">
-    <!-- <a id="pdf" href="./media/cv.pdf">Download PDF &rarr;</a> -->
-    <h1><a href="http://obeattie.com/">Oliver Beattie</a></h1>
-    
-    <div id="content">
-        <p id="lead">I am a web developer in the United Kingdom.</p>
-        <p id="contact-lead"><a class="email" href="mailto:oliver@obeattie.com">oliver@obeattie.com</a></p>
-        <div class="clear section"></div>
-        
-        <!-- Employment -->
-        <h2 id="employment">Employment</h2>
-            <!--<strong id="unavailable">Not currently looking for work</strong>-->
-            
-            <!-- Lucky Voice -->
-            <h3>Lucky Voice, London, UK <span>Head of development</span> <em>July 2011&ndash;</em></h3>
-            <p><a href="http:/www.luckyvoice.com/">Lucky Voice</a> is the most liberating, heart-racing, life-affirming private karaoke experience on earth.</p>
-            <hr />
-            
-            <!-- Nokia -->
-            <h3>Nokia, Helsinki, Finland <span>Software Engineer</span> <em>August 2010&ndash;July 2011</em></h3>
-            <p>At Nokia I worked as part of the MeeGo Infrastructure team in the Nokia Research Centre, which is responsible for the architecture and tools supporting the development of the MeeGo operating system. Here, I was responsible for the development, maintenance and deployment of many mission-critical applications and services used by thousands of Nokia's developers. All work was done with an emphasis on open-source software, with an emphasis on Python and Linux (specifically Debian).</p>
-            
-            <!-- PAMH -->
-            <h3>parkatmyhouse.com, London, UK <span>Lead Developer</span> <em>October 2009&ndash;August 2010</em></h3>
-            <p><a href="http://www.parkatmyhouse.com/">parkatmyhouse.com</a> is the leading online marketplace for parking in the UK, helping over 70,000 people rent out their garage or driveway. Here, I was tasked with the total rebuild of the site, adding significant new functionality and moving from an unmaintainable PHP codebase to a modern, Python-powered solution using such technologies as Django and SQLAlchemy.</p>
-            
-            <!-- BLT -->
-            <h3>Blue Lava Technologies, Honolulu, HI <span>Web Developer</span> <em>January 2008&ndash;June 2009</em></h3>
-            <p>Blue Lava Technologies is an internet start-up based in Honolulu, Hawaii, building <a href="http://ilovephotos.com/">iLovePhotos</a>, a Python/Django-based photo sharing platform that integrates facial detection and granular, private sharing. At Blue Lava, I was part of a  three-person team, responsible for the design and implementation of the web platform. Notable achievements included:</p>
-            <ul>
-                <li>Implementing a site-wide message queue system for background tasks with RabbitMQ</li>
-                <li>Designing and building the site's &quot;Channels&quot; feature, which  automatically broadcasts photos matching specified criteria to digital photo frames, iPods &amp; iPhones, and Apple TV devices</li>
-                <li>Building the site's &quot;Mission Control&quot; functionality, including detailed user statistics</li>
-                <li>Designing many of the models, including a private, granular sharing system and an efficient news feed currently operating across thousands of user accounts</li>
-                <li>Working with many site components that rely heavily on Amazon Web Services (S3 and EC2)</li>
-                <li>Building a database migration and deployment toolkit, which is used to automatically and reliably deploy new versions of the site across many servers with no downtime</li>
-                <li>Co-designing and implementing the iLovePhotos visual identity</li>
-                <li>Rapidly iterating on site features, using Scrum</li>
-            </ul>
-            
-            <!-- SR -->
-            <h3>SchoolRack, Los Angeles, CA <span>Web Developer</span> <em>February 2008&ndash;November 2008</em></h3>
-            <p>I worked as a contractor for <a href="http://www.schoolrack.com/">SchoolRack</a>, a site for teachers, students and parents to communicate outside the classroom. I designed and implemented the billing, premium subscription, user messaging, email notification and discussion board components. These are currently in use on tens of thousands of accounts.</p>
-            
-            <!-- WT -->
-            <h3>Welbeck Tiles Ltd. <span>Designer / Developer</span> <em>July 2009&ndash;August 2009</em></h3>
-            <p>I worked with <a href="http://www.welbeck.com/">Welbeck Tiles</a>, Britain's leading handmade tile company to completely redesign and rebuild their website and identity. The new identity is now used across both the website (built with Python/Django and launched August 2009) and all printed materials.</a></p>
-        
-        <!-- Skills -->
-        <h2 id="skills">Skills</h2>
-            <ul class="col">
-                <li>Django, Python</li>
-                <li>SQL, SQLALchemy (and Django integration)</li>
-                <li>AMQP, RabbitMQ</li>
-                <li>Objective-C, Cocoa, Cocoa Touch (iPhone)</li>
-                <li>XMPP, Jabber</li>
-                <li>Memcached, Squid</li>
-                <li>Amazon Web Services (S3, EC2, SQS)</li>
-                <li>Git, Subversion, Mercurial, Bazaar</li>
-                <li>OpenID, Facebook Connect</li>
-            </ul>
-            <ul class="col">
-                <li>Web services integration</li>
-                <li>API design and development, OAuth</li>
-                <li>JavaScript, (X)HTML, XML, CSS, AJAX</li>
-                <li>Linux administration (Ubuntu/Debian), Shell</li>
-                <li>Apache, nginx, FastCGI</li>
-                <li>MySQL, PostgreSQL, PostGIS</li>
-                <li>Agile development practices (Scrum)</li>
-                <li>Adobe Photoshop, Illustrator, InDesign</li>
-                <li>Unit, functional and regression testing</li>
-            </ul>
-            <div class="clear"></div>
-            
-            <!-- Contact -->
-            <h2 id="contact">Contact details</h2>
-            <p>The best way to get in touch is usually <a href="mailto:oliver@obeattie.com">by email to oliver@obeattie.com</a>, or by phone on +44 (0)7584 048620.</p>
+<body>
+    <div id="card">
+        <div>
+            <h1>Oliver Beattie</h1>
+            <p>Will ocasionally blog here.<br />In the mean time, follow him <a href="http://twitter.com/obeattie" title="@obeattie on Twitter">here.</a></p>
     </div>
-    
-    <!-- Google analytics -->
-    <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-        try {
-            var pageTracker = _gat._getTracker("UA-915572-1");
-            pageTracker._trackPageview();
-        } catch(err) {
-            // Ho hum
-        }
-    </script>
 </body>
 </html>
