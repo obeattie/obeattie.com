@@ -279,6 +279,7 @@ a {
   #container > div img {
     float: none;
     margin: 0 auto 20px auto;
+    width: 200px;
   }
   #container > div div {
     display: block;
