@@ -284,4 +284,10 @@ a {
     display: block;
     width: 100%;
   }
+  #container > div h1 {
+    font-size: 22px;
+  }
+  #container > div p {
+    font-size: 17px;
+  }
 }
