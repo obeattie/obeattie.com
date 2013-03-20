@@ -3,7 +3,7 @@
 
 html, body {
     background: #fdffff;
-    font: 20px/1.4 "Whitney Light", Whitney, "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+    font: 18px/1.4 "Whitney Light", Whitney, "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     color: #2a2a2a;
     min-width: 100%;
     min-height: 100%;
@@ -68,6 +68,12 @@ a {
         p {
             position: relative;
             opacity: 0;
+            
+            iframe {
+                position: relative;
+                top: 8px;
+                margin-right: 3px;
+            }
             
             .ready & {
                 .animation(fadein @fade-duration ease-out (@fade-delay + .4s) forwards);
