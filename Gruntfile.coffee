@@ -1,7 +1,7 @@
 module.exports = (grunt) ->
     grunt.initConfig {
         pkg: grunt.file.readJSON('package.json'),
-        
+
         less: {
             production: {
                 options: {
@@ -16,7 +16,7 @@ module.exports = (grunt) ->
                 }
             }
         },
-        
+
         cssmin: {
             production: {
                 files: {
@@ -27,7 +27,15 @@ module.exports = (grunt) ->
                 }
             }
         }
-        
+
+        cacheBust: {
+            options: {
+                deleteOriginals: false
+                rename: true
+            }
+            files: ['index.html']
+        }
+
         watch: {
             files: [
                 'static/*.css',
@@ -36,11 +44,12 @@ module.exports = (grunt) ->
             tasks: ['build']
         }
     }
-    
+
     # Load plugins
     grunt.loadNpmTasks('grunt-contrib-watch')
     grunt.loadNpmTasks('grunt-contrib-less')
     grunt.loadNpmTasks('grunt-contrib-cssmin')
-    
+    grunt.loadNpmTasks('grunt-cache-bust')
+
     # Default tasks
     grunt.registerTask('build', ['less', 'cssmin'])
