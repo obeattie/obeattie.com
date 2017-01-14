@@ -11,6 +11,7 @@ module.exports = (grunt) ->
                     'static/obeattie.css': [
                         'static/mixins.less',
                         'static/*.css',
+                        '!static/obeattie.css',
                         'static/*.less'
                     ]
                 }
