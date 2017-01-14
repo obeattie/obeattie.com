@@ -18,11 +18,11 @@ html, body {
 a {
     color: #3498db;
     text-decoration: none;
-    
+
     &:hover {
         color: #2980b9;
     }
-    
+
     &:active {
         color: #3498db;
     }
@@ -33,21 +33,21 @@ strong {
 }
 
 #container {
-    @fade-delay: .85s;
-    @fade-duration: .7s;
-    
+    @fade-delay: .7s;
+    @fade-duration: .5s;
+
     .box-sizing(border-box);
     height: 100%;
     display: table-cell;
     vertical-align: middle;
     padding: 20px;
-    
+
     > div {
         width: 880px;
         margin: 0 auto;
         min-height: 254px;
         display: table;
-        
+
         img {
             .border-radius(254px / 2);
             position: relative;
@@ -55,39 +55,47 @@ strong {
             display: block;
             opacity: 0;
             float: left;
-            
+
             .ready & {
                 .animation(fadein @fade-duration ease-out forwards);
             }
         }
-        
+
         div {
             width: 580px;
             display: table-cell;
             vertical-align: middle;
         }
-        
+
         h1 {
             position: relative;
             font-size: 30px;
-            margin-bottom: 20px;
             opacity: 0;
-            
+
             .ready & {
                 .animation(fadein @fade-duration ease-out @fade-delay forwards);
             }
         }
-        
-        p {
+
+        p#intro {
+            margin-bottom: 20px;
+            font-size: 22px;
+
+            .ready & {
+                .animation(fadein @fade-duration ease-out (@fade-delay + .2s) forwards);
+            }
+        }
+
+        p#actions {
             position: relative;
             opacity: 0;
-            
+
             iframe {
                 position: relative !important;
                 top: 8px;
                 margin-right: 3px;
             }
-            
+
             .ready & {
                 .animation(fadein @fade-duration ease-out (@fade-delay + .4s) forwards);
             }
@@ -113,22 +121,18 @@ strong {
     #container > div {
         width: 100%;
         text-align: center;
-        
+
         img {
             float: none;
             margin: 0 auto 20px auto;
             width: 200px;
         }
-        
+
         div {
             display: block;
             width: 100%;
         }
-        
-        h1 {
-            font-size: 22px;
-        }
-        
+
         p {
             font-size: 17px;
         }
