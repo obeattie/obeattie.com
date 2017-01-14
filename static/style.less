@@ -34,7 +34,7 @@ strong {
 
 #container {
     @fade-delay: .7s;
-    @fade-duration: .5s;
+    @fade-duration: .3s;
 
     .box-sizing(border-box);
     height: 100%;
@@ -78,11 +78,13 @@ strong {
         }
 
         p#intro {
-            margin-bottom: 20px;
+            position: relative;
+            margin: 20px 0;
             font-size: 22px;
+            opacity: 0;
 
             .ready & {
-                .animation(fadein @fade-duration ease-out (@fade-delay + .2s) forwards);
+                .animation(fadein @fade-duration ease-out (@fade-delay + .15s) forwards);
             }
         }
 
@@ -97,7 +99,7 @@ strong {
             }
 
             .ready & {
-                .animation(fadein @fade-duration ease-out (@fade-delay + .4s) forwards);
+                .animation(fadein @fade-duration ease-out (@fade-delay + .3s) forwards);
             }
         }
     }
