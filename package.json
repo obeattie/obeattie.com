@@ -2,11 +2,11 @@
   "name": "obeattie.com-resume",
   "version": "0.2.0",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-cache-bust": "^1.4.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-copy": "^4.0.1",
-    "gulp-cssmin": "^0.2.0",
-    "gulp-less": "^5.0.0"
+    "@parcel/transformer-less": "^2.0.0-nightly.755",
+    "parcel": "^2.0.0-beta.3.1"
+  },
+  "scripts": {
+    "dev": "parcel serve index.html",
+    "build": "parcel build index.html"
   }
 }
