@@ -1,6 +1,6 @@
 .PHONY: upload
 upload:
-	grunt build cacheBust
-	s3cmd --no-preserve --exclude-from .s3ignore sync . s3://www.obeattie.com/
-	git clean -f static
-	git co HEAD index.html
+	rm -rf ./dist
+	gulp dist
+	aws s3 sync ./dist s3://www.obeattie.com/
+	aws cloudfront create-invalidation --distribution-id E2PQEQ2H0719SJ --paths "/*"

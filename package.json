@@ -1,14 +1,12 @@
 {
   "name": "obeattie.com-resume",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "devDependencies": {
-    "grunt": "^1.4.1",
-    "grunt-cache-bust": "^1.7.0",
-    "grunt-contrib-cssmin": "^4.0.0",
-    "grunt-contrib-less": "^3.0.0",
-    "grunt-contrib-watch": "^1.1.0"
-  },
-  "dependencies": {
-    "coffeescript": "^2.5.1"
+    "gulp": "^4.0.2",
+    "gulp-cache-bust": "^1.4.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^4.0.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-less": "^5.0.0"
   }
 }
